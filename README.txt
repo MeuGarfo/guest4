@@ -5,12 +5,11 @@ data        hora    tempo   tarefa
 22jun2019   08:43   05m     alterar o basic/controller para trabalhar com o call
 22jun2019   08:46   05m     alterar o basic/view para trabalhar com o call
 22jun2019   08:51   05m     alterar o bin/migrate para ler o call.json
-22jun2019   08:56   05m     alterar o bin/migrate para ler o call.json
-10m     testar se está funcionando
-05m     enviar todos os basics alterados para o github
-05m     calcular o tempo total de desenvolvimento
+22jun2019   08:56   05m     testar se está funcionando
+22jun2019   08:58   05m     enviar todos os basics alterados para o github
+22jun2019   09:00   05m     calcular o tempo total de desenvolvimento
 
 numero inicial de tarefas = 5 tarefas
 tempo máximo estimado inicialmente = 30m
-tempo total gasto =
-numero final de tarefas =
+tempo total gasto = 45m
+numero final de tarefas = 9 tarefas
