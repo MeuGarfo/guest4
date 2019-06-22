@@ -49,12 +49,16 @@ class Migration
         }
         return $tables;
     }
-    public function migrateAll($repos)
+    public function migrateAll($repos=false)
     {
         $tables=[];
         if($repos && is_array($repos)){
             foreach ($repos as $repo) {
-                $dir=ROOT.$repo.'/table/';
+                if($repo=='home'){
+                    $dir=ROOT.$repo.'/table/';
+                }else{
+                    $dir=ROOT.'call/getcall/'.$repo.'/table/';
+                }
                 $tabelas=$this->getTables($dir);
                 foreach ($tabelas as $nomeDaTabela => $nomeDasColunas) {
                     if(isset($tables[$nomeDaTabela])){

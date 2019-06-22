@@ -10,11 +10,9 @@ if(createDB()){
 }
 $db=db();
 echo 'migrando tabelas...'.PHP_EOL;
-$repos=[
-    'auth',
-    'home',
-    'mensagem'
-];
+$filename=ROOT.'call/call.json';
+$repos=json_decode(file_get_contents($filename));
+$repos[]='home';
 if(migrate($db,$repos)){
     print 'tabelas migradas com sucesso'.PHP_EOL;
 }else{
