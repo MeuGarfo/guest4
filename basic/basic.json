@@ -1,0 +1,17 @@
+[
+    "inc",
+    "controller",
+    "env",
+    "error",
+    "view",
+    "model",
+    "migrate",
+    "db",
+    "segment",
+    "method",
+    "e",
+    "auth",
+    "redirect",
+    "route",
+    "asset"
+]
